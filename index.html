@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Drone Eco Clean | Nettoyage de façades par drone</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Curseur custom (desktop uniquement, affiché par JS) -->
+<div id="gallery-cursor" aria-hidden="true">
+  <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="26" cy="26" r="25" fill="#B4E724"/>
+    <line x1="26" y1="14" x2="26" y2="38" stroke="#0d1420" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="14" y1="26" x2="38" y2="26" stroke="#0d1420" stroke-width="2.5" stroke-linecap="round"/>
+  </svg>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a class="brand" href="#">
+      <img src="logo.png" alt="Drone Eco Clean" class="logo">
+      Drone Eco Clean
+    </a>
+    <ul class="nav-links">
+      <li><a href="#services">Nos prestations</a></li>
+      <li><a href="#avantages">Pourquoi le drone</a></li>
+      <li><a href="#galerie">Galerie</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Devis gratuit</a>
+    <button class="burger"><i class="bi bi-list"></i></button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <h1>Nettoyage extérieur <br>par Drone</h1>
+      <p class="hero-sub">Intervention rapide et sécurisée sur toitures, façades et panneaux solaires grâce au drone, avec des produits éco-responsables. Sans nacelle, sans échafaudage, sans risque.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-main">Demander un devis</a>
+        <a href="#avantages" class="btn-ghost">Découvrir les avantages</a>
+      </div>
+      <div class="hero-pills">
+        <div class="pill"><i class="bi bi-person-circle"></i> Particuliers</div>
+        <div class="pill"><i class="bi bi-briefcase"></i> Professionnels</div>
+        <div class="pill"><i class="bi bi-building"></i> Collectivités</div>
+      </div>
+      <br>
+      <p class="hero-zone">Zone d'intervention : <strong>Normandie / Régions voisines</strong></p>
+    </div>
+    <div class="hero-logo-block">
+      <div class="hero-logo-ring">
+        <img src="logo.png" alt="Drone Eco Clean Logo" class="hero-logo-img">
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- SERVICES -->
+<div id="services-anchor" class="scroll-anchor"></div>
+<section id="services">
+  <div class="wrap">
+    <span class="section-label">Ce que nous faisons</span>
+    <h2 class="section-title">Nos services</h2>
+    <p class="section-sub">Des interventions adaptées à chaque type de bâtiment, sans contraintes logistiques.</p>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon"><i class="bi bi-buildings"></i></div>
+        <h3>Bâtiments résidentiels &amp; tertiaires</h3>
+        <p>Nettoyage haute précision pour habitations, immeubles et bâtiments professionnels de toute taille.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="bi bi-house-door"></i></div>
+        <h3>Toitures &amp; bardages</h3>
+        <p>Traitement des surfaces difficiles d'accès sans aucun risque humain en hauteur.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="bi bi-arrow-repeat"></i></div>
+        <h3>Entretien préventif</h3>
+        <p>Programmes d'entretien régulier pour prolonger la durée de vie et l'esthétique de vos façades.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AVANTAGES -->
+<div id="avantages-anchor" class="scroll-anchor"></div>
+<section id="avantages">
+  <div class="wrap">
+    <span class="section-label">Pourquoi le drone</span>
+    <h2 class="section-title">Des avantages concrets</h2>
+    <p class="section-sub">Une technologie qui change les règles du nettoyage en hauteur.</p>
+    <div class="avantages-grid">
+      <div class="av-card"><i class="bi bi-currency-euro"></i><h3>Économique</h3><p>Jusqu'à 50 % moins cher qu'une intervention classique.</p></div>
+      <div class="av-card"><i class="bi bi-shield-check"></i><h3>Sécurisé</h3><p>Aucun échafaudage ni nacelle : zéro risque.</p></div>
+      <div class="av-card"><i class="bi bi-lightning-charge"></i><h3>Rapide</h3><p>Intervention en quelques heures contre plusieurs jours pour un nettoyage traditionnel.</p></div>
+      <div class="av-card"><i class="bi bi-tree-fill"></i><h3>Écologique</h3><p>Produits biodégradables : <br>impact minimal.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARATIF -->
+<div class="comparatif">
+  <div class="wrap">
+    <span class="section-label">Comparatif</span>
+    <h2 class="section-title">Méthode traditionnelle / Drone</h2>
+    <p class="section-sub">Un tableau clair pour comprendre la différence.</p>
+    <div class="table-scroll">
+      <table class="cmp-table">
+        <thead>
+          <tr><th></th><th>Méthode traditionnelle</th><th>Nettoyage par drone</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><i class="bi bi-box-arrow-up-right"></i> Échafaudage / nacelle</td>
+            <td><i class="bi bi-x-circle-fill"></i> Nécessaire</td>
+            <td><i class="bi bi-check-circle-fill text-success"></i> Aucun équipement</td>
+          </tr>
+          <tr>
+            <td><i class="bi bi-shield-lock"></i> Sécurité</td>
+            <td><i class="bi bi-exclamation-triangle-fill"></i> Risques de chute</td>
+            <td><i class="bi bi-shield-fill-check text-success"></i> Aucun risque</td>
+          </tr>
+          <tr>
+            <td><i class="bi bi-clock"></i> Durée d'intervention</td>
+            <td><i class="bi bi-hourglass-split"></i> 1 - 7 jours</td>
+            <td><i class="bi bi-hourglass text-success"></i> 2 - 4 heures</td>
+          </tr>
+          <tr>
+            <td><i class="bi bi-currency-euro"></i> Coût</td>
+            <td><i class="bi bi-cash-stack"></i> Élevé</td>
+            <td><i class="bi bi-piggy-bank text-success"></i> Jusqu'à 50 % moins cher</td>
+          </tr>
+          <tr>
+            <td><i class="bi bi-tree-fill"></i> Impact environnemental</td>
+            <td><i class="bi bi-droplet-fill"></i> Produits chimiques</td>
+            <td><i class="bi bi-arrow-repeat text-success"></i> Écologique</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cmp-cards">
+      <div class="cmp-card">
+        <div class="cmp-card-header"><i class="bi bi-box-arrow-up-right"></i> Échafaudage / nacelle</div>
+        <div class="cmp-card-body">
+          <div class="cmp-col traditional"><span class="cmp-col-label traditional">Traditionnel</span><span class="cmp-col-value"><i class="bi bi-x-circle-fill"></i> Nécessaire</span></div>
+          <div class="cmp-col drone"><span class="cmp-col-label drone">Par drone</span><span class="cmp-col-value"><i class="bi bi-check-circle-fill"></i> Aucun équipement</span></div>
+        </div>
+      </div>
+      <div class="cmp-card">
+        <div class="cmp-card-header"><i class="bi bi-shield-lock"></i> Sécurité</div>
+        <div class="cmp-card-body">
+          <div class="cmp-col traditional"><span class="cmp-col-label traditional">Traditionnel</span><span class="cmp-col-value"><i class="bi bi-exclamation-triangle-fill"></i> Risques de chute</span></div>
+          <div class="cmp-col drone"><span class="cmp-col-label drone">Par drone</span><span class="cmp-col-value"><i class="bi bi-shield-fill-check"></i> Aucun risque</span></div>
+        </div>
+      </div>
+      <div class="cmp-card">
+        <div class="cmp-card-header"><i class="bi bi-clock"></i> Durée d'intervention</div>
+        <div class="cmp-card-body">
+          <div class="cmp-col traditional"><span class="cmp-col-label traditional">Traditionnel</span><span class="cmp-col-value"><i class="bi bi-hourglass-split"></i> 1 - 7 jours</span></div>
+          <div class="cmp-col drone"><span class="cmp-col-label drone">Par drone</span><span class="cmp-col-value"><i class="bi bi-hourglass"></i> 2 - 4 heures</span></div>
+        </div>
+      </div>
+      <div class="cmp-card">
+        <div class="cmp-card-header"><i class="bi bi-currency-euro"></i> Coût</div>
+        <div class="cmp-card-body">
+          <div class="cmp-col traditional"><span class="cmp-col-label traditional">Traditionnel</span><span class="cmp-col-value"><i class="bi bi-cash-stack"></i> Élevé</span></div>
+          <div class="cmp-col drone"><span class="cmp-col-label drone">Par drone</span><span class="cmp-col-value"><i class="bi bi-piggy-bank"></i> Jusqu'à 50 % moins cher</span></div>
+        </div>
+      </div>
+      <div class="cmp-card">
+        <div class="cmp-card-header"><i class="bi bi-tree-fill"></i> Impact environnemental</div>
+        <div class="cmp-card-body">
+          <div class="cmp-col traditional"><span class="cmp-col-label traditional">Traditionnel</span><span class="cmp-col-value"><i class="bi bi-droplet-fill"></i> Produits chimiques</span></div>
+          <div class="cmp-col drone"><span class="cmp-col-label drone">Par drone</span><span class="cmp-col-value"><i class="bi bi-arrow-repeat"></i> Écologique</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- GALERIE -->
+<div id="galerie-anchor" class="scroll-anchor"></div>
+<section id="galerie">
+  <div class="wrap">
+    <span class="section-label">Galerie</span>
+    <h2 class="section-title">Le drone en action</h2>
+    <p class="section-sub">Des surfaces transformées, sans une seule nacelle.</p>
+
+    <!-- ── DESKTOP (≥ 900px) : grille 2 lignes + lightbox + curseur custom ── -->
+    <div class="gallery-layout gallery-desktop">
+      <div class="gallery-row gallery-row--2">
+        <a href="20260406_104438.jpg" data-lightbox="drone" class="gallery-link">
+          <div class="media-box"><img src="20260406_104438.jpg" alt="Drone en action"></div>
+        </a>
+        <a href="20260331_112549.jpg" data-lightbox="drone" class="gallery-link">
+          <div class="media-box"><img src="20260331_112549.jpg" alt="Inspection façade"></div>
+        </a>
+      </div>
+      <div class="gallery-row gallery-row--2">
+        <a href="20260331_111953.jpg" data-lightbox="drone" class="gallery-link">
+          <div class="media-box"><img src="20260331_111953.jpg" alt="Drone professionnel"></div>
+        </a>
+        <div class="gallery-video-wrap">
+          <video controls playsinline preload="metadata">
+            <source src="video1.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── TABLETTE (480px – 899px) : slider swipeable ── -->
+    <div class="gallery-slider-wrap gallery-tablet">
+      <div class="gallery-slider" id="gallerySlider">
+        <div class="gallery-slide">
+          <div class="media-box"><img src="20260406_104438.jpg" alt="Drone en action"></div>
+        </div>
+        <div class="gallery-slide">
+          <div class="media-box"><img src="20260331_112549.jpg" alt="Inspection façade"></div>
+        </div>
+        <div class="gallery-slide">
+          <div class="media-box"><img src="20260331_111953.jpg" alt="Drone professionnel"></div>
+        </div>
+        <div class="gallery-slide">
+          <div class="gallery-video-wrap">
+            <video controls playsinline preload="metadata">
+              <source src="video1.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+      <div class="slider-dots" id="sliderDots">
+        <button class="slider-dot active" data-index="0" aria-label="Slide 1"></button>
+        <button class="slider-dot" data-index="1" aria-label="Slide 2"></button>
+        <button class="slider-dot" data-index="2" aria-label="Slide 3"></button>
+        <button class="slider-dot" data-index="3" aria-label="Vidéo"></button>
+      </div>
+    </div>
+
+    <!-- ── MOBILE (< 480px) : images empilées, pas de zoom ── -->
+    <div class="gallery-mobile">
+      <div class="media-box"><img src="20260406_104438.jpg" alt="Drone en action"></div>
+      <div class="media-box"><img src="20260331_112549.jpg" alt="Inspection façade"></div>
+      <div class="media-box"><img src="20260331_111953.jpg" alt="Drone professionnel"></div>
+      <div class="gallery-video-wrap">
+        <video controls playsinline preload="metadata">
+          <source src="video1.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<div id="contact-anchor" class="scroll-anchor"></div>
+<section id="contact">
+  <div class="wrap">
+    <span class="section-label">Nous contacter</span>
+    <h2 class="section-title">Demandez votre devis</h2>
+    <p class="section-sub">Réponse rapide — intervention dans toute la Normandie et régions voisines.</p>
+    <div class="contact-grid">
+      <form id="contact-form" class="contact-form" action="https://formspree.io/f/xaqlkvrn" method="POST">
+        <input type="hidden" name="_subject" value="Nouvelle demande de devis - Drone Eco Clean">
+        <input type="text" name="_gotcha" style="display:none">
+        <input type="text" name="nom" placeholder="Nom / Société" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="tel" name="telephone" placeholder="Téléphone (optionnel)">
+        <input type="text" name="adresse" placeholder="Adresse" required>
+        <textarea name="message" placeholder="Votre message (type de bâtiment, surface approximative…)"></textarea>
+        <button type="submit" class="btn-main btn-full"><span class="btn-text">Envoyer la demande</span></button>
+      </form>
+      <div class="contact-info">
+        <div class="info-item">
+          <i class="bi bi-telephone"></i>
+          <div><span>Téléphone</span><strong>06 17 41 44 63</strong></div>
+        </div>
+        <div class="info-item">
+          <i class="bi bi-envelope"></i>
+          <div><span>Email</span><a href="mailto&#58;drone&#46;ecoclean&#64;gmail&#46;com">drone&#46;ecoclean&#64;gmail&#46;com</a></div>
+        </div>
+        <div class="info-item">
+          <i class="bi bi-share"></i>
+          <div>
+            <span>Réseaux sociaux</span>
+            <div class="social-links">
+              <a href="https://www.tiktok.com/@drone.eco.clean" target="_blank"><i class="bi bi-tiktok"></i> TikTok</a>
+              <a href="https://www.facebook.com/profile.php?id=61588237874902" target="_blank"><i class="bi bi-facebook"></i> Facebook</a>
+              <a href="https://www.instagram.com/droneecoclean" target="_blank"><i class="bi bi-instagram"></i> Instagram</a>
+              <a href="https://www.linkedin.com/in/jerome-eustache-b4a3163a1" target="_blank"><i class="bi bi-linkedin"></i> LinkedIn</a>
+            </div>
+          </div>
+        </div>
+        <div class="qr-box">
+          <img src="droneecoclean.png" alt="QR Code">
+          <p>Scannez pour accéder directement à nos réseaux sur mobile.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <p>&copy; 2026 <span>Drone Eco Clean</span> — Normandie &amp; régions voisines</p>
+    <div class="footer-legal">
+      <a id="privacy-link" href="javascript:void(0)">Politique de confidentialité</a>
+    </div>
+  </div>
+</footer>
+
+<!-- TOAST -->
+<div id="form-toast" class="form-toast">
+  <div class="toast-box">
+    <i class="bi bi-check-circle-fill"></i>
+    <span>Votre demande a bien été envoyée</span>
+  </div>
+</div>
+
+<!-- BANDEAU COOKIE -->
+<div id="cookie-banner" class="cookie-banner">
+  <div class="cookie-banner-inner">
+    <div class="cookie-text">
+      <i class="bi bi-shield-check"></i>
+      <div>
+        <strong>Cookies essentiels uniquement</strong>
+        <p>Ce site utilise uniquement des cookies techniques nécessaires à son fonctionnement (formulaire de contact, galerie). Aucun cookie publicitaire ni analytique n'est utilisé.</p>
+      </div>
+    </div>
+    <div class="cookie-actions">
+      <button onclick="acceptCookies()" class="btn-main btn-cookie">J'ai compris</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODALE CONFIDENTIALITÉ -->
+<div id="privacy-modal" class="modal-overlay">
+  <div class="modal-box modal-box--large">
+    <div class="modal-header">
+      <h3><i class="bi bi-shield-lock"></i> Politique de confidentialité</h3>
+      <button class="modal-close">&times;</button>
+    </div>
+    <div class="modal-body privacy-content">
+      <h4>1. Responsable du traitement</h4>
+      <p>Le site <strong>Drone Eco Clean</strong> est édité par Drone Eco Clean, intervenant en Normandie et ses régions voisines. Pour toute question relative à la protection de vos données, contactez-nous à : <strong>drone.ecoclean@gmail.com</strong>.</p>
+      <h4>2. Données collectées via le formulaire de contact</h4>
+      <p>Lorsque vous remplissez notre formulaire de devis, nous collectons :</p>
+      <ul>
+        <li><strong>Nom / Société</strong> — pour vous identifier</li>
+        <li><strong>Email</strong> — pour vous répondre</li>
+        <li><strong>Téléphone</strong> (optionnel) — pour vous rappeler si nécessaire</li>
+        <li><strong>Adresse</strong> — pour localiser le lieu d'intervention</li>
+        <li><strong>Message</strong> — pour comprendre votre besoin</li>
+      </ul>
+      <h4>3. Sécurité de la transmission</h4>
+      <div class="privacy-highlight">
+        <i class="bi bi-lock-fill"></i>
+        <div>
+          <strong>Connexion chiffrée (HTTPS/TLS)</strong>
+          <p>Toutes les données envoyées via le formulaire transitent par une connexion chiffrée HTTPS, protégées contre toute interception pendant la transmission.</p>
+        </div>
+      </div>
+      <h4>4. Finalité et base légale</h4>
+      <p>Vos données sont traitées <strong>uniquement</strong> dans le but de répondre à votre demande de devis, sur la base de votre <strong>consentement</strong> (article 6.1.a du RGPD).</p>
+      <h4>5. Destinataires des données</h4>
+      <p>Vos données sont transmises à :</p>
+      <ul>
+        <li><strong>L'équipe Drone Eco Clean</strong> — pour traiter votre demande</li>
+        <li><strong>Formspree</strong> (sous-traitant technique) — service sécurisé d'acheminement de formulaires, conforme aux clauses contractuelles types (CCT) de la Commission européenne</li>
+      </ul>
+      <p>Vos données ne sont <strong>jamais vendues ni partagées</strong> à des fins commerciales.</p>
+      <h4>6. Cookies</h4>
+      <p>Ce site utilise uniquement des cookies techniques strictement nécessaires à son fonctionnement. <strong>Aucun cookie publicitaire, analytique ou de suivi</strong> n'est utilisé.</p>
+      <h4>7. Durée de conservation</h4>
+      <p>Vos données sont conservées le temps nécessaire au traitement de votre demande, et au maximum <strong>12 mois</strong> après le dernier échange.</p>
+      <h4>8. Vos droits (RGPD)</h4>
+      <p>Conformément au RGPD, vous disposez des droits suivants :</p>
+      <ul>
+        <li><strong>Accès</strong> — consulter les données que nous détenons sur vous</li>
+        <li><strong>Rectification</strong> — corriger des informations inexactes</li>
+        <li><strong>Suppression</strong> — demander l'effacement de vos données</li>
+        <li><strong>Opposition</strong> — vous opposer au traitement</li>
+        <li><strong>Portabilité</strong> — recevoir vos données dans un format structuré</li>
+      </ul>
+      <p>Pour exercer ces droits, écrivez à <strong>drone.ecoclean@gmail.com</strong>. Vous pouvez également introduire une réclamation auprès de la <strong>CNIL</strong> (cnil.fr).</p>
+      <h4>9. Mise à jour</h4>
+      <p>Cette politique peut être mise à jour. Dernière révision : <strong>Avril 2026</strong>.</p>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox.min.js"></script>
+
+<script>
+/* ── Lightbox ── */
+lightbox.option({ resizeDuration: 200, wrapAround: true, alwaysShowNavOnTouchDevices: true, disableScrolling: true });
+
+/* Désactiver lightbox si pas desktop */
+document.querySelectorAll('.gallery-link').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    if (window.innerWidth < 900) e.preventDefault();
+  });
+});
+</script>
+
+<script>
+/* ── Curseur custom galerie desktop ── */
+(function() {
+  var cursor  = document.getElementById('gallery-cursor');
+  var gallery = document.querySelector('.gallery-desktop');
+  if (!cursor || !gallery) return;
+
+  /* Seulement sur vrais pointeurs (pas tablette/touch) */
+  if (window.matchMedia('(hover: none)').matches) return;
+
+  var inside = false;
+
+  document.addEventListener('mousemove', function(e) {
+    if (!inside) return;
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top  = e.clientY + 'px';
+  });
+
+  gallery.addEventListener('mouseenter', function() {
+    inside = true;
+    cursor.classList.add('visible');
+  });
+
+  gallery.addEventListener('mouseleave', function() {
+    inside = false;
+    cursor.classList.remove('visible');
+  });
+
+  /* Masquer sur la zone vidéo */
+  var vid = gallery.querySelector('.gallery-video-wrap');
+  if (vid) {
+    vid.addEventListener('mouseenter', function() { cursor.classList.remove('visible'); });
+    vid.addEventListener('mouseleave', function() { if (inside) cursor.classList.add('visible'); });
+  }
+})();
+</script>
+
+<script>
+/* ── Slider tablette ── */
+(function() {
+  var slider = document.getElementById('gallerySlider');
+  var dots   = document.querySelectorAll('.slider-dot');
+  if (!slider) return;
+
+  var current = 0;
+  var total   = document.querySelectorAll('.gallery-slide').length;
+  var startX  = 0;
+  var moved   = false;
+
+  function goTo(idx) {
+    current = Math.max(0, Math.min(idx, total - 1));
+    slider.style.transform = 'translateX(-' + (current * 100) + '%)';
+    dots.forEach(function(d, i) { d.classList.toggle('active', i === current); });
+  }
+
+  slider.addEventListener('touchstart', function(e) {
+    startX = e.touches[0].clientX;
+    moved  = false;
+  }, { passive: true });
+
+  slider.addEventListener('touchmove',  function() { moved = true; }, { passive: true });
+
+  slider.addEventListener('touchend', function(e) {
+    if (!moved) return;
+    var diff = startX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 40) diff > 0 ? goTo(current + 1) : goTo(current - 1);
+  });
+
+  dots.forEach(function(dot) {
+    dot.addEventListener('click', function() { goTo(parseInt(dot.dataset.index)); });
+  });
+})();
+</script>
+
+<script>
+/* ── Navbar scroll ── */
+window.addEventListener('scroll', function() {
+  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 40);
+});
+</script>
+
+<script>
+/* ── Burger ── */
+var burger   = document.querySelector('.burger');
+var navLinks = document.querySelector('.nav-links');
+var isClosing = false;
+
+function isMobile() { return window.innerWidth <= 900; }
+function openMenu() { navLinks.style.display = 'flex'; requestAnimationFrame(function() { navLinks.classList.add('open'); }); }
+function closeMenu(cb) {
+  if (isClosing || !navLinks.classList.contains('open')) return;
+  isClosing = true;
+  navLinks.classList.add('closing');
+  navLinks.classList.remove('open');
+  setTimeout(function() { navLinks.classList.remove('closing'); navLinks.style.display = ''; isClosing = false; if (cb) cb(); }, 400);
+}
+
+burger.addEventListener('click', function() { navLinks.classList.contains('open') ? closeMenu() : openMenu(); });
+window.addEventListener('resize', function() { if (!isMobile()) { navLinks.style.display = ''; navLinks.classList.remove('open','closing'); isClosing = false; } });
+
+var lastScrollY = 0;
+window.addEventListener('scroll', function() {
+  if (navLinks.classList.contains('open') && window.scrollY !== lastScrollY) closeMenu();
+  lastScrollY = window.scrollY;
+});
+
+document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+  a.addEventListener('click', function(e) {
+    var href = a.getAttribute('href');
+    if (href === '#') { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); return; }
+    var target = document.querySelector(href);
+    if (!target) return;
+    e.preventDefault();
+    var doScroll = function() {
+      var navH = document.querySelector('#navbar').offsetHeight;
+      window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - navH, behavior: 'smooth' });
+    };
+    if (navLinks.classList.contains('open')) closeMenu();
+    if (window.scrollY === 0) setTimeout(doScroll, 20); else doScroll();
+  });
+});
+</script>
+
+<script>
+/* ── Formulaire AJAX ── */
+var form    = document.getElementById('contact-form');
+var toast   = document.getElementById('form-toast');
+var btnText = document.querySelector('.btn-text');
+
+form.addEventListener('submit', async function(e) {
+  e.preventDefault();
+  var data = new FormData(form);
+  btnText.innerHTML = 'Envoi en cours...';
+  try {
+    var response = await fetch(form.action, { method: form.method, body: data, headers: { 'Accept': 'application/json' } });
+    if (response.ok) {
+      form.reset();
+      btnText.innerHTML = 'Envoyer la demande';
+      toast.classList.add('show');
+      setTimeout(function() { toast.classList.remove('show'); }, 3500);
+    }
+  } catch(err) {
+    btnText.innerHTML = 'Envoyer la demande';
+    alert('Une erreur est survenue. Réessayez.');
+  }
+});
+</script>
+
+<script>
+/* ── Cookies ── */
+function acceptCookies() { localStorage.setItem('cookie_accepted', '1'); document.getElementById('cookie-banner').classList.remove('show'); }
+(function() { if (!localStorage.getItem('cookie_accepted')) setTimeout(function() { document.getElementById('cookie-banner').classList.add('show'); }, 800); })();
+</script>
+
+<script>
+/* ── Modale ── */
+var privacyModal = document.getElementById('privacy-modal');
+function openPrivacyModal()  { privacyModal.classList.add('open');    document.body.style.overflow = 'hidden'; }
+function closePrivacyModal() { privacyModal.classList.remove('open'); document.body.style.overflow = ''; }
+document.getElementById('privacy-link').addEventListener('click', openPrivacyModal);
+document.querySelectorAll('.modal-close').forEach(function(btn) { btn.addEventListener('click', closePrivacyModal); });
+privacyModal.addEventListener('click', function(e) { if (e.target === privacyModal) closePrivacyModal(); });
+</script>
+
+</body>
+</html>

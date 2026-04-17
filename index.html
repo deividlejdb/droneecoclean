@@ -599,32 +599,49 @@ privacyModal.addEventListener('click', function(e) { if (e.target === privacyMod
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Drone Eco Clean",
-  "description": "Nettoyage de façades, toitures et panneaux solaires par drone en Normandie.",
-  "url": "https://www.droneecoclean.fr",
-  "logo": "https://www.droneecoclean.fr/logo.png",
-  "image": "https://www.droneecoclean.fr/logo.png",
-  "telephone": "+33617414463",
-  "email": "drone.ecoclean@gmail.com",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "22 Rue Eugène Figeac",
-    "addressLocality": "Saint-Martin-de-May",
-    "postalCode": "14320",
-    "addressCountry": "FR"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 49.1003,
-    "longitude": -0.3667
-  },
-  "areaServed": "Normandie",
-  "sameAs": [
-    "https://www.facebook.com/profile.php?id=61588237874902",
-    "https://www.instagram.com/droneecoclean",
-    "https://www.tiktok.com/@drone.eco.clean",
-    "https://www.linkedin.com/in/jerome-eustache-b4a3163a1"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.droneecoclean.fr/#organization",
+      "name": "Drone Eco Clean",
+      "url": "https://www.droneecoclean.fr",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.droneecoclean.fr/logo.png",
+        "width": 819,
+        "height": 819
+      },
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61588237874902",
+        "https://www.instagram.com/droneecoclean",
+        "https://www.tiktok.com/@drone.eco.clean",
+        "https://www.linkedin.com/in/jerome-eustache-b4a3163a1"
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://www.droneecoclean.fr/#localbusiness",
+      "name": "Drone Eco Clean",
+      "description": "Nettoyage de façades, toitures et panneaux solaires par drone en Normandie.",
+      "url": "https://www.droneecoclean.fr",
+      "logo": "https://www.droneecoclean.fr/logo.png",
+      "image": "https://www.droneecoclean.fr/logo.png",
+      "telephone": "+33617414463",
+      "email": "drone.ecoclean@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "22 Rue Eugène Figeac",
+        "addressLocality": "Saint-Martin-de-May",
+        "postalCode": "14320",
+        "addressCountry": "FR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 49.1003,
+        "longitude": -0.3667
+      },
+      "areaServed": "Normandie"
+    }
   ]
 }
 </script>
